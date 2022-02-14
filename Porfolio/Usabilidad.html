@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Css/estilos.css">
+	<style>
+	#titulo:hover{
+	background: #37474F;
+	color: #fff;
+	padding: 30px 50px 30px 30px;
+}
+#titulo{
+	color: #37474F;
+	background: #fff;
+	width: 50%;
+	padding: 35px 5px 35px 5px;
+	left: 35%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#titulo h2{
+	text-align: right;
+	font-size: 30px;
+	width: 75%;
+}
+#titulo h1{
+	font-size:70px; 
+}
+.codigo{
+			line-height: 0;
+			width: 100%;
+			height: 120vh;
+			overflow: hidden;
+			margin: auto;
+			z-index: 100;
+			position: relative;
+			margin-bottom: 150px;
+		}
+		.codigo div{
+			width: 100%;
+			height: 100%;
+			transition-duration: 1s;
+			background: url(../Imagenes/fondo_usabilidad.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: 100;
+			bottom: 0;
+			position: absolute;
+		}
+		.codigo div:hover{
+			transform: scale(1.1);
+			transition: 1s all;
+			z-index: 10;
+		}
+	</style>
+	<title>Diseño Interfaces Web</title>
+</head>
+<body>
+	<div id="arriba"></div>
+	<div id="main">
+	<div id="arrow">
+			<a href="#arriba"><img src="../Imagenes/up-arrow.png" alt="flecha"></a>
+		</div>
+	<header>
+		<nav>
+			<a href="../Index.html"><img src="../Imagenes/logo-fp.png" alt="logo"></a>
+			<ul class="menu">
+				<li><a href="Planificacion.html">Planificación</a>
+					<ul>
+						<li><a href="Planificacion.html#estructura">Estructura</a></li>
+						<li><a href="Planificacion.html#elementos_basicos">Elementos Basicos</a></li>
+						<li><a href="Planificacion.html#maquetacion">Maquetación</a></li>
+						<li><a href="Planificacion.html#guias_de_estilo">Guías de Estilo</a></li>
+					</ul>
+				</li>
+				<li><a href="Accesibilidad.html">Accesibilidad</a>
+				<ul>
+					<li><a href="Accesibilidad.html#concepto">Concepto</a></li>
+					<li><a href="Accesibilidad.html#consorcio">Consorcio</a></li>
+					<li><a href="Accesibilidad.html#consejos">Consejos web accesible</a></li>
+					<li><a href="Accesibilidad.html#evolucion">Evolución</a></li>
+				</ul>
+				</li>
+				<li><a href="Usabilidad.html">Usabilidad</a>
+				<ul>
+					<li><a href="#concepto">Concepto</a></li>
+					<li><a href="#directrices">Directrices y consejos</a></li>
+					<li><a href="#beneficios">Beneficios</a></li>
+					<li><a href="#seo">Seo - Posicionamiento</a></li>
+				</ul>
+				</li>
+				<li><a href="Derechos_Licencias.html">Derechos/Licencias</a>
+					<ul>
+						<li><a href="Derechos_Licencias.html#copyright">Copyright</a></li>
+						<li><a href="Derechos_Licencias.html#software">Licencias de Software</a></li>
+						<li><a href="Derechos_Licencias.html#beneficios">Tipos de Licencias</a></li>
+						<li><a href="Derechos_Licencias.html#copyleft">Copyleft</a></li>
+					</ul>
+				</li>
+				<li><a href="Imagenes.html">Imágenes</a>
+					<ul>
+						<li><a href="Imagenes.html#Tipo">Tipo</a></li>
+						<li><a href="Imagenes.html#Formatos">Formatos</a></li>
+						<li><a href="Imagenes.html#software_imagenes">Software Imagenes</a></li>
+						<li><a href="Imagenes.html#Inclusion">Inclusion</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="fondo">
+			<div id="titulo">
+				<h1>Usabilidad</h1><br><h2>web</h2>
+			</div>
+		</div>
+	</header>
+	<div class="codigo">
+			<div>
+			</div>
+			<!-- <img src="Imagenes/codigo.jpg"> -->
+	</div>
+	<section>
+			<article class="articulo" id="concepto">
+				<h3>- Concepto de usabilidad</h3>
+				<img src="../Imagenes/usabilidad-web.jpg" alt="usabilidad" style="width: 55%; display: block; margin: auto;">
+				<div class="text">
+					<div class="derecha">
+						<p>La usabilidad web se refiere a la facilidad de uso que tiene una página o aplicación web.
+					De esta forma los internautas interactúan con el sitio y consiguen sus objetivos de forma
+					sencilla, intuitiva, agradable y segura.
+					Una de las características fundamentales
+					para que los usuarios visiten plácidamente
+					un sitio web y regresen nuevamente a él,
+					mejorando así la estrategia de marketing
+					digital de la empresa.
+					</p>
+					<img src="../Imagenes/usabilida.jpg" alt="usabilidad" style="width: 50%;">
+					</div>
+					<h4>- Tres factores principales:</h4>
+					<ul>
+						<li>eficiencia: el usuario satisface la necesidad de su búsqueda;</li>
+						<li>eficacia: el usuario logra rápidamente alcanzar su cometido;</li>
+						<li>satisfacción: el usuario se sintió agradable al navegar por el sitio web.</li>
+					</ul>
+					<h4>- Recomendaciones para que tu sitio web tenga más usabilidad:</h4>
+					<div>
+						<ul>
+							<li>Priorizar la disponibilidad</li>
+							<li>No olvidar la velocidad</li>
+							<li>Garantizar la seguridad</li>
+							<li>Producir un sitio web responsivo</li>
+							<li> Entregar sencillez y compactación</li>
+							<li>Tener contenido de calidad</li>
+							<li>Abrir una sección “nosotros”</li>
+							<li>Información clave en la página de inicio</li>
+						</ul>
+						<img src="../Imagenes/RECOMENDACIONES.png" alt="recomendaciones">
+					</div>
+				</div>
+				<div class="text">
+					<h4>- Limitaciones de acceso a la web</h4>
+					<p>Deficiencias visuales: Entre las que se encuentran la ceguera, la visión reducida
+					y los problemas en visualización de color.</p>
+					<p>Deficiencias auditivas: Estas deficiencias pueden ser consideradas menos
+					limitadoras en el acceso y uso de
+					contenidos digitales, debido a
+					que el canal sonoro es mucho
+					menos utilizado en interfaces
+					web que el canal visual. Aún así,
+					no podemos olvidar limitaciones
+					y barreras derivadas de esta
+					discapacidad, como es el caso del
+					lenguaje.</p>
+					<img src="../Imagenes/limitaciones.png" alt="limitaciones" style="margin: 30px 0;">
+					<p>Deficiencias motrices: Son las relacionadas con la capacidad de movilidad del
+					usuario. Estos usuarios no suelen ser capaces de interactuar con el sistema a
+					través de dispositivos de entrada tradicionales, por lo que utilizan dispositivos
+					alternativos (Ejem: basados en voz).
+					Deficiencias cognitivas y de lenguaje: Son usuarios que presentan problemas
+					en el uso del lenguaje, la lectura, percepción, memoria, salud mental…</p>
+				</div>
+			</article>	
+			<article class="articulo" id="directrices">
+				<h3>- Directrices y consejos de usabilidad</h3>
+				<div class="text">
+						<h4>La calidad del diseño de un sitio web es un indicador de credibilidad</h4>
+						<p>Múltiples estudios defienden que las personas no empleamos criterios
+						rigurosos a la hora de juzgar un sitio web y que el diseño es la primera prueba
+						en la credibilidad de un sitio web por encima incluso de la información fiable y
+						de calidad.</p>
+						<h4>El scroll mola</h4>
+						<div class="derecha">
+							<p>Con la aparición de los móviles no queda más
+							remedio que hacer scroll en casi cualquier
+							web y los usuarios se han acostumbrado a
+							ello.
+							Esto no quiere decir que no debamos ubicar
+							cosas como el logo, el menú de navegación o
+							el propósito del sitio en la parte superior y más visible</p>
+							<img src="../Imagenes/scroll.png" alt="scroll">
+						</div>
+						<h4>El azul sigue siendo el mejor color para los enlaces.</h4>
+						<p>Desde que Sir Tim Berners-Lee creó las primeras páginas de hipertexto y eligió
+						el color azul para los enlaces de forma aparentemente aleatoria, esta directriz
+						se ha impuesto como norma.
+						El color azul es uno de los menos problemáticos para las personas con
+						deficiencias de visión, de forma que casi todo el mundo puede ver el azul o más
+						exactamente, casi todo el mundo es capaz de distinguir el azul como un color
+						diferente de los demás
+						</p>
+						<h4>El espacio en blanco mejora la comprensión.</h4>
+						<div class="izquierda"> 
+						<p>Este elemento no visible tiene un fuerte impacto
+						en la UX. Si quieres que algo destaque añade
+						espacio en blanco alrededor.</p>	
+						<img src="../Imagenes/espacio-blanco-diseno.png" alt="espacio-blanco-diseno">
+						</div>
+						<h4>Los usuarios no ven la publicidad</h4>
+						<p>La ceguera publicitaria dicta que la mayoría de nosotros ignoramos consciente
+						o inconscientemente la información que se nos muestra en forma de banners.
+						Por esto debemos evitar el uso de cualquier técnica que haga parecer que un
+						bloque es un anuncio.
+						</p>
+						<h4>3 clicks siguen siendo el máximo permitido</h4>
+						<div class="derecha">
+						<p>Los usuarios deben encontrar lo que buscan sin
+						superar los 3 clicks dentro de un sitio web. Esta
+						regla es especialmente importante en tiendas
+						online.</p>
+						<img src="../Imagenes/click.jpg" alt="click">
+						</div>		
+						<h4>Los humanos sólo pueden retener a la vez entre 5 y 9 cosas en la memoria a corto
+						plazo</h4>
+						<p>
+						El mítico principio del 7 más o menos 2, se ha aplicado desde comienzos de los
+						90 para limitar el número de items de un menú de navegación a 7. Esta regla se
+						puede aplicar también a otros elementos del sitio como bloques de información
+						o categorías.</p>
+						<h4>El tiempo de carga es inversamente proporcional a la satisfacción de un usuario</h4>
+						<div class="derecha">
+							<p>Otro principio clásico,
+							conocido como la regla del
+							segundo segundo,
+							antiguamente se decía que un
+							usuario no debería esperar
+							más de dos segundos para obtener algún resultado de sus acciones como la carga de una página o similar</p>
+							<img src="../Imagenes/tiempo_de_carga.png" alt="tiempo de carga">
+						</div>
+						</div>
+			</article>
+			<article class="articulo" id="beneficios">
+				<h3>- Beneficios de cumplir con las directrices y consejos de usabilidad</h3>
+				<div class="text">
+				<h4>- Entre los principales beneficios se encuentran</h4>
+					<div class="derecha">
+						<ul>
+						<li>Reducción de los costes de
+						aprendizaje y esfuerzos</li>
+						<li>Disminución de los costes de asistencia y ayuda al usuario</li>
+						<li>Disminución en la tasa de errores
+						cometidos por el usuario y del
+						retrabajo.
+						</li>
+						<li>Optimización de los costes de diseño, rediseño y mantenimiento.</li>
+						<li>Aumento de la tasa de conversión de visitantes a clientes de un sitio web.</li>
+						<li> Aumento de la satisfacción y comodidad del usuario.</li>
+						<li>Mejora la imagen y el prestigio.</li>
+						<li>Mejora la calidad de vida de los usuarios, ya que reduce su estrés, incrementa la
+						satisfacción y la productividad.</li>
+					</ul>
+					<img src="../Imagenes/beneficio.jpg" alt="beneficios">
+					</div>
+					<p>Además, la usabilidad implementada en el espacio de trabajo conlleva una serie de
+					beneficios, entre los que se encuentran:</p>
+					<div class="izquierda">
+						<ul>
+							<li>Mejora de la postura corporal.</li>
+							<li>Diseño ergonómico del mobiliario.</li>
+							<li>Reducción de los problemas de organización.</li>
+							<li>Mejora del ambiente laboral.</li>
+							<li>Optimización del software y la interfaz utilizada.</li>
+						</ul>
+						<img src="../Imagenes/organizar-espacio-trabajo.jpg" alt="organizar-espacio-trabajo">
+					</div>
+				</div>
+			</article>
+			<article class="articulo" id="seo">
+				<h3>- SEO, posicionamiento de los motores de búsqueda</h3>
+				<div class="text">
+					<div class="derecha">
+						<p>El posicionamiento en buscadores, optimización en
+					motores de búsqueda o SEO (del inglés search engine
+					optimization), es un conjunto de acciones orientadas a
+					mejorar el posicionamiento de un sitio web en la lista
+					de resultados de Google, Bing, u otros buscadores de
+					internet.1 El SEO trabaja aspectos técnicos como la
+					optimización de la estructura y los metadatos de una
+					web, pero también se aplica a nivel de contenidos, con
+					el objetivo de volverlos más útiles y relevantes para los usuarios.
+					</p>
+					<img src="../Imagenes/seo1.png" alt="seo">
+					</div>
+					<p>Se puede dividir en dos grandes grupos:</p>
+					<ul class="listas">
+						<li>
+							<h5>On-site:</h5>
+							<div class="derecha">
+								<img src="../Imagenes/SEO-local.png" alt="seo">
+								<p>Se preocupa de la relevancia. Se asegura de que la web está optimizada para
+								que el motor de búsqueda entienda lo principal, que es el contenido de la misma. Dentro
+								del SEO On-site incluiríamos la optimización de
+								keywords, tiempo de carga, experiencia del
+								usuario, op</p>
+							</div>
+						</li>
+						<li>
+							<h5>Off-site:</h5>
+								<p>Es la parte del trabajo que se centra
+								en factores externos a la página web en la que
+								trabajamos. Los factores más importantes son
+								el número y la calidad de los enlaces, presencia en redes sociales, menciones en medios
+								locales, autoridad de la marca y rendimiento en los resultados de búsqueda, es decir, el
+								CTR que tengan nuestros resultados en un motor de búsqueda. </p>
+						</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h3>- ¿Por qué es el SEO importante?</h3>
+					<div class="izquierda">
+						<p>La razón más importante por la que es necesario el
+						SEO es porque hace más útil tu página web tanto para
+						los usuarios como para los motores de búsqueda.
+						Aunque estos aún no pueden ver una página web
+						como lo hace un humano. El SEO es necesario para
+						ayudar a los motores de búsqueda a entender sobre
+						qué trata cada página y si es o no útil para los usuarios.</p>
+						<img src="../Imagenes/importante.png" alt="importante">
+					</div>
+				</div>
+					<div class="text">
+					<h3>- ¿Cómo funcionan los motores de búsqueda?</h3>
+					<h4>Rastreo</h4>
+					<p>Un motor de búsqueda recorre la web rastreando con lo que se llaman bots. Estos
+					recorren todas las páginas a través de los enlaces. De ahí la importancia de una buena
+					estructura de enlaces. Al igual que haría cualquier usuario al navegar por el contenido
+					de la Web, pasan de un enlace a otro y recopilan
+					datos sobre esas páginas web que proporcionan
+					a sus servidores.
+					</p>
+					<div class="derecha">
+						<p>El proceso de rastreo empieza con una lista de
+						direcciones web de rastreos anteriores y de
+						sitemaps proporcionada por otras páginas web.
+						Una vez acceden a estas web, los bots buscan
+						enlaces a otras páginas para visitarlas. Los bots se
+						sienten especialmente atraídos por los sitios nuevos y a los cambios en las web
+						existentes.
+						</p>
+						<img src="../Imagenes/que-es-seo.png" alt="seo">
+					</div>
+					<p>Son los propios bots los que deciden qué páginas visitar, con qué frecuencia y cuánto
+					tiempo van a rastrear esa web, por eso es importante tener un tiempo de carga óptimo
+					y un contenido actualizado
+					</p>
+					<h4>Indexación</h4>
+					<div class="izquierda">
+						<p>Una vez que un bot ha rastreado
+						una web y ha recopilado la
+						información necesaria, estas
+						páginas se incluyen en un índice.
+						Ahí se ordenan según su contenido,
+						su autoridad y su relevancia. De
+						este modo, cuando hagamos un
+						consulta al motor de búsqueda le
+						resultará mucho más fácil
+						mostrarnos los resultados que están más relacionados con nuestra consulta.</p>
+						<img src="../Imagenes/indexacion.png" alt="indexacion">
+					</div>
+					<br/>
+					<p>Al principio los motores de búsqueda se basaban en el número de veces que se repetía
+					una palabra. Al hacer una búsqueda rastreaban en su índice esos términos para
+					encontrar qué páginas los tenían en sus textos, posicionando mejor la que más veces lo
+					tenía repetido. Actualmente, son más sofisticados y basan sus índices en cientos de
+					aspectos diferentes. La fecha de publicación, si contienen imágenes, vídeos o
+					animaciones, microformatos, etc. son algunos de esos aspectos. Ahora dan más
+					prioridad a la calidad del contenido.
+					</p>
+					<div class="izquierda">
+					<p>Una vez que las páginas son rastreadas e
+					indexadas, llega el momento en el que actúa
+					el algoritmo: los algoritmos son los procesos
+					informáticos que deciden qué páginas
+					aparecen antes o después en los resultados
+					de búsqueda. Realizada la búsqueda, los
+					algoritmos revisan en los índices. Así sabrán
+					cuáles son las páginas más relevantes teniendo en cuenta los cientos de factores de
+					posicionamiento. Y todo esto sucede en cuestión de milisegundos.</p>
+					<img src="../Imagenes/Actualizaciones_algoritmos.png" alt="Actualizaciones_algoritmos">
+					</div>
+				</div>
+			</article>
+		</section>
+	<footer>
+		<div class="fila">
+			<div class="columna">
+			<h3>Contacto</h3>
+			<p>Calle 123 Manuel Troya</p>
+			<p>Gijon - Asturias - España</p>
+			<p><a href="#" class="email">jessuss@gmail.com</a><p>
+			<p>+34 248212341</p>
+		</div>
+<div class="columna">
+			<h3>Información</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Politica de Privacidad</a></li>
+				<li><a href="#">Contactanos</a></li>
+				<li><a href="#">Terminos y Condiciones</a></li>
+			</ul>
+		</div>
+		<div class="columna">
+			<h3>Newsletter</h3>
+			<form>
+				<img src="../Imagenes/correo.png" alt="correo">
+				<input type="email" name="email" placeholder="Introduce su email">
+				<button type="submit"><img src="../Imagenes/siguiente.png" alt="siguiente"></button>
+
+			</form>
+			<div class="social">
+				<img src="../Imagenes/instagram.png" alt="instagram">
+				<img src="../Imagenes/whatsapp.png" alt="whatsapp">
+				<img src="../Imagenes/twitter.png" alt="twitter">
+			</div>
+		</div>
+		</div>
+	</footer>
+		</div>
+</body>
+</html>

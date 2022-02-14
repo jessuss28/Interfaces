@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Css/estilos.css">
+	<style>
+		#titulo:hover{
+			background: #37474F;
+			color: #fff;
+			padding: 100px 100px 30px 10px;
+		}
+		#titulo{
+			width: 50%;
+			padding: 35px 5px 35px 5px;
+			left: 35%;
+			top: 50%;
+			transform: translate(-50%,-50%);
+			color: #37474F;
+			background: #fff;
+		}
+		#titulo h2{
+			text-align: right;
+			font-size: 30px;
+		}
+		#titulo h1{
+			font-size:70px; 
+		}
+		/*section{
+			width: 90%;
+			margin: auto;
+		}*/
+		.codigo{
+			line-height: 0;
+			width: 100%;
+			height: 120vh;
+			overflow: hidden;
+			margin: auto;
+			z-index: 100;
+			position: relative;
+			margin-bottom: 150px;
+		}
+		.codigo div{
+			width: 100%;
+			height: 100%;
+			transition-duration: 1s;
+			background: url(../Imagenes/5.png);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: 100;
+			bottom: 0;
+			position: absolute;
+		}
+		.codigo div:hover{
+			transform: scale(1.1);
+			transition: 1s all;
+			z-index: 10;
+		}
+		
+		.estructura{
+			width: 338px;
+			height: 330px;
+			margin: auto;
+			display: block;
+		}
+	
+		
+	</style>
+	<title>Diseño Interfaces Web</title>
+</head>
+<body>
+	<div id="arriba"></div>
+	<div id="main">
+		<div id="arrow">
+			<a href="#arriba"><img src="../Imagenes/up-arrow.png" alt="flecha"></a>
+		</div>
+		<header>
+			<nav>
+				<a href="../Index.html"><img src="../Imagenes/logo-fp.png" alt="logo-fp"></a>
+				<ul class="menu">
+					<li><a href="Planificacion.html">Planificación</a>
+						<ul>
+							<li><a href="#estructura">Estructura</a></li>
+							<li><a href="#elementos_basicos">Elementos Basicos</a></li>
+							<li><a href="#maquetacion">Maquetación</a></li>
+							<li><a href="#guias_de_estilo">Guías de Estilo</a></li>
+						</ul>
+					</li>
+					<li><a href="Accesibilidad.html">Accesibilidad</a>
+				<ul>
+					<li><a href="Accesibilidad.html#concepto">Concepto</a></li>
+					<li><a href="Accesibilidad.html#consorcio">Consorcio</a></li>
+					<li><a href="Accesibilidad.html#consejos">Consejos web accesible</a></li>
+					<li><a href="Accesibilidad.html#evolucion">Evolución</a></li>
+				</ul>
+				</li>
+					<li><a href="Usabilidad.html">Usabilidad</a>
+					<ul>
+						<li><a href="Usabilidad.html#concepto">Concepto</a></li>
+						<li><a href="Usabilidad.html#directrices">Directrices y consejos</a></li>
+						<li><a href="Usabilidad.html#beneficios">Beneficios</a></li>
+						<li><a href="Usabilidad.html#seo">Seo - Posicionamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="Derechos_Licencias.html">Derechos/Licencias</a>
+					<ul>
+						<li><a href="Derechos_Licencias.html#copyright">Copyright</a></li>
+						<li><a href="Derechos_Licencias.html#software">Licencias de Software</a></li>
+						<li><a href="Derechos_Licencias.html#beneficios">Tipos de Licencias</a></li>
+						<li><a href="Derechos_Licencias.html#copyleft">Copyleft</a></li>
+					</ul>
+				</li>
+					<li><a href="Imagenes.html">Imágenes</a>
+					<ul>
+						<li><a href="Imagenes.html#Tipo">Tipo</a></li>
+						<li><a href="Imagenes.html#Formatos">Formatos</a></li>
+						<li><a href="Imagenes.html#software_imagenes">Software Imagenes</a></li>
+						<li><a href="Imagenes.html#Inclusion">Inclusion</a></li>
+					</ul>
+				</li>
+				</ul>
+			</nav>
+			<div id="fondo">
+				<div id="titulo">
+					<h1>Planificación</h1><br/><h2>de Interfaces Web</h2>
+				</div>
+			</div>
+		</header>
+		
+		<div class="codigo">
+			<div>
+			</div>
+			<!-- <img src="Imagenes/codigo.jpg"> -->
+		</div>
+		<section>
+			<article class="articulo" id="estructura">
+				<h3>Estructura de una página web</h3>
+				<img src="../Imagenes/estructura.jpeg" alt="estructura_html" class="estructura">
+				<div class="text">
+					<h4>- Cabecera</h4>
+					<p>El elemento head de un documento HTML es la parte que no se muestra en el navegador
+						cuando se carga la página. Contiene información como el título title de la página, enlaces al CSS (si quieres aplicar estilo a tu contenido HTML con CSS), enlaces parapersonalizar favicon, y otros metadatos (datos sobre el HTML, como quién lo escribió y palabras claves importantes que describen el documento).
+					</p>
+					<div class="izquierda">
+						<img src="../Imagenes/head.jpg" alt="cabecera">
+						<p>El elemento &lt;h1&gt; aparece en la página cuando se carga en el navegador — en general
+							debería haber uno solo por página, para especificar el título del contenido de tu página
+							(el título de tu historia, el título de la noticia, o de lo que sea apropiado según el uso que
+							le des).<br/>
+							Hay muchos diferentes tipos de elementos &lt;meta&gt; que se pueden incluir en el &lt;head&gt;
+							de la página.<br/>
+							El elemento &lt;link&gt; siempre debe ir dentro del &lt;header&gt;
+							de tu documento. Esta toma dos atributos,
+							rel="stylesheet", que indica que es la hoja de estilo del
+							documento, y href, que contiene la ruta al archivo de la
+							hoja de estilo.<br/>
+							Por último, merece la pena mencionar que puedes (y
+							realmente deberías) especificar el idioma de tu página.
+							Esto se puede hacer añadiendo el atributo lang a la
+						etiqueta de apertura del HTML.</p>
+					</div>
+				</div>
+				<div class="text">
+					<h4>- Menú o sistema de navegación</h4>
+					<p>El menú de una página web es la principal herramienta de navegación que le podemos
+						facilitar al visitante para que encuentre lo que busca. Es imprescindible para que las
+					personas encuentren las demás páginas de la web, además del índice.</p>
+					<p>Los menús de navegación son básicamente listas de enlaces a las diferentes páginas o
+						secciones de la web. De su estructuración dependerá en gran medida que los visitantes
+						encuentren lo que buscan, por lo que es conveniente pensarse dos veces cómo hacerlo
+					antes de implementarlo en la web.</p>
+					<p>Podemos encontrar un menú horizontal:</p>
+					<img src="../Imagenes/menu.jpg" alt="menu_horizontal" style="margin: 10px 0; margin-left: 5%;">
+					<p>O un menú vertical:</p>
+					<img src="../Imagenes/menu_vertical.jpg" alt="menu_vertical" style="margin: 10px 0; margin-left: 5%; width: 33%;">
+					<p>Si mantenemos la sencillez lograremos obtener una navegación eficaz. Sin importar
+						cuántas categorías tenga el sitio, ni la cantidad de páginas que alberga, nunca debes
+						llevar al extremo la exigencia hacia el usuario, por lo que mantener alejada la
+						complejidad del diseño de tu sitio se debe de convertir en una de tus tareas principales.
+						Ante la duda, siempre es preferible optar por la opción más simple. Basta con hacer una
+						recorrida por las páginas web más visitadas, para ver que los efectos no son un
+					elemento principal, y en muchas, ni siquiera existen.</p>
+				</div>
+				<div class="text">
+					<h4>- Cuerpo de la pagina , área de contenido</h4>
+					<p>El cuerpo de la página es la parte de la interfaz
+						web que presenta a los usuarios información
+						específica sobre un tema concreto. Por lo
+						tanto, es la parte de la página que la identifica
+						e individualiza frente a las demás de un sitio
+					web.</p>
+					<img src="../Imagenes/cuerpo.jpg" alt="cuerpo" style="float: right; margin: 15px 0; margin-right: 5%; width: 50%;">
+					<p>Al ser la parte más importante de la interfaz, el
+						espacio destinado a ella debe ser el mayor de todos, ocupando generalmente entre el
+						50% y el 85% del total. Su ubicación es siempre central.
+					</p>
+					<img src="../Imagenes/titulo.png" alt="titulo" style=" margin: 10px 0; margin-left: 5% ; width: 50%;">
+					<p>El cuerpo es habitual que lleve un un título identificando claramente la página a la que ha accedido el usuario.
+						Este título se situará en la parte superior de esta zona, y puede
+						ser reforzado mediante un menú de navegación tipo "migas de
+					pan".</p>
+					<p>El tamaño de las letras del título de página debe ser superior al del
+						resto de los contenidos, de tal forma que destaque sobre ellos,
+						efecto que puede aumentarse dando al mismo un color que le
+						aporte un mayor peso visual. En este caso no es imprescindible
+						que el título de página sea de mayor tamaño, siempre que por su contraste de colores
+						destaque lo suficiente.
+					</p>
+					<p>También es común diferenciar visualmente el cuerpo central del resto de la página, bien
+						usando para el mismo un color diferente, bien dejando a su alrededor uno espacios
+						vacíos que lo separen de forma clara del resto de elementos de la interfaz.<br>
+						Todos los elementos gráficos que situemos dentro del cuerpo de página deben
+						presentar un aspecto similar al del resto de elementos de la interfaz, respetando sus
+						estilos generales de diseño.
+					</p>
+				</div>
+				<div class="text">
+					<h4>- Pie de página</h4>
+					<p>Siguiendo con el uso de elementos semánticos de HTML5 vamos a ver cómo podemos
+						crear un pie de página en HTML5 mediante el elemento footer. El elemento semántico
+					footer nos permite agrupar los elementos que representen el pie de la página.</p>
+					<p>Dentro del contenido del pie de página tenemos el copyright de las páginas, enlaces a
+						páginas administrativas o tipo «acerca de» del sitio, los últimos
+						artículos publicados,… todo depende de lo grande o pequeño que
+						sea nuestro pie de página.
+					</p>
+					<img src="../Imagenes/footer.png" alt="footer" style=" margin: 10px 0; margin-left: 5% ;">
+					<p>Para incluir el pie de página con el elemento footer simplemente
+						añadiremos el elemento antes del cierre del cuerpo de la página
+						body.
+						Para incluir el pie de página con el elemento footer simplemente
+						añadiremos el elemento antes del cierre del cuerpo de la página
+						body.
+					</p>
+					<p>El elemento footer al ser un elemento semántico no tiene ninguna representación visual
+						a la hora de renderizar el documento. A no ser que mediante CSS le demos algún tipo
+						de visualización o bien insertemos dentro de él diferente contenido que tenga su propia
+					visualización.</p>
+				</div>
+				<div class="text">
+					<h4>- Espacios en blanco en el diseño</h4>
+					<p>En términos de diseño web, son los espacios entre gráficos,
+						columnas, imágenes, texto, márgenes, y otros elementos. Se
+						usa para suavizar el entorno y transformar una página en algo
+					elegante. También nos recuerda que los diseños más simples </p>
+					<img src="../Imagenes/espacio-blanco-diseno.png" alt="espacio-blanco-diseno" style=" margin: 10px 0; margin-left: 5% ; width: 40%;">
+					<p>son geniales y que no necesitamos crear una pieza llena de texto y elementos gráficos
+						para enviar un mensaje claro y directo.<br>
+						Aunque se le llama en diseño espacio en blanco, no significa que tenga que ser de este
+						color, la cuestión es que esté libre de elementos como texto o imágenes. Es una forma
+						de organizar texto, elementos y guiar la atención de los usuarios hacia ciertos lugares.
+						<br>
+						Un ejemplo de uso del espacio en blanco con el que todos estamos familiarizados es
+						Google. Su página de inicio permite centrarse en lo que es importante: hacer las
+					búsquedas.</p>
+					<h5>Tres elementos a considerar al usar espacios blancos en diseño</h5>
+					<h6>Legibilidad
+					</h6>
+					<div class="izquierda">
+						<img src="../Imagenes/legibilidad.png" alt="legibilidad">
+						<p>El espacio en blanco es esencial para hacer legible el contenido de la web. Como
+							diseñadores, debemos considerar el espacio en blanco al elegir
+							las especificaciones de la tipografía de diseño: la fuente, el
+							tamaño, el color, el estilo, el interlineado, el interletraje y el
+							seguimiento. Cambiar el diseño del espacio en blanco afecta el
+						rendimiento de lectura, y la experiencia general del usuario</p>
+					</div>
+					<h6>Diseño de tono y marca</h6>	
+					<div class="izquierda">
+						<img src="../Imagenes/tono.png" alt="tono">
+						<p>El espacio en blanco contribuye al tono del diseño general.
+							Por ejemplo, los sitios web con mucho espacio en blanco
+							pueden reflejar minimalismo. Es por este motivo que el uso
+							que hagamos de los espacios en blanco no solo debe
+							mejorar la experiencia de usuario, sino que también debe
+							encajar con el tono de nuestra marca.
+						</p>
+					</div>
+					<h6>Enfoque y atención</h6>
+					<div class="izquierda">
+						<img src="../Imagenes/enfoque.jpg" alt="enfoque">
+						<p>Los espacios en blanco en diseño pueden ayudar a guiar al
+							usuario a través del contenido de una web, tanto si la visualiza
+							desde un ordenador, como desde cualquier otro soporte, como un
+							smartphone. Los espacios en blanco pueden facilitar la creación
+							de puntos focales, lo cual ayuda a dirigir la atención del usuario a
+							partes específicas del diseño.
+							Parte de la planificación estratégica de un sitio web es dar prioridad a elementos o
+							contenidos específicos. Podemos usar muchos métodos visuales para destacar
+							elementos específicos, siendo uno de ellos el jugar con la cantidad de espacio en blanco
+						alrededor de estos puntos focales.</p>
+					</div>
+				</div>
+			</article>	
+			<article class="articulo" id="elementos_basicos">
+				<h3>Elementos básicos de una interfaz web.</h3>
+				<div class="text">
+					<h4>- El color</h4>
+					<h5>Modelo RGB</h5>
+					<div class="derecha">
+						<p>También llamado RVA, es un modelo de color basado en la síntesis
+							aditiva con el que es posible representar un color mediante mezcla por la adición
+							de los tres colores de luz primarios. Exactamente no significa rojo verde o azul,
+							ya que puede variar notablemente dependiendo de los dispositivos en los que
+							se use este modelo.
+							En Css por ejemplo el valor 0 significa que no interviene en la mezcla y a medida
+						que ese valor aumenta, aporta más intensidad hasta llegar al 255 en decimal.</p>
+						<img src="../Imagenes/color-rgb.jpg" alt="color-rgb" style="width: 20%;">
+					</div>
+					<h5>Modelo HSL</h5>
+					<div class="derecha">
+						<p>También llamado HSI, se representa gráficamente como un cono
+							doble. Los dos vértices se corresponden con el blanco y el negro, el ángulo se
+							corresponde con el matiz, la distancia al eje con la saturación y la distancia al
+							eje blanco-negro se corresponde a la luminancia.
+							Algunas aplicaciones que usan HSL son Facebook api web Developer
+						, Macromedia Studio, Paint Shop Pro.</p>
+						<img src="../Imagenes/modelo-hsl.jpg" alt="modelo-hsl">
+					</div>
+					<h5>Modelo HSV</h5>
+					<div class="derecha">
+						<p>También llamado HSB, se representa como un grado de ángulo
+							cuyos valores posibles van de 0 a 360° aunque en algunas aplicaciones se
+							normalizan de 0 al 100%. Cada valor corresponde a un color, por ejemplo, el 0 es
+							rojo, 60 amarillo y 120 verde.
+							Disponemos de 360 grados donde se dividen los 3 colores RGB dando un total de
+						120° por color.</p>
+						<img src="../Imagenes/hsv.png" alt="hsv">
+					</div>
+				</div>
+				<div class="text">
+					<h4>- La tipografía</h4>
+					<h5>Sans Serif</h5>
+					<div class="izquierda">
+						<p>Es aquel que en cada carácter carece de las pequeñas
+							terminaciones
+							llamadas remates, gracias o serifas.
+							Son muy usadas en entornos digitales ya que los detalles son difíciles de plasmar
+							en píxeles transmitiendo fuerza, modernidad e informalidad además de llamar
+						mucho más la atención.</p>
+						<img src="../Imagenes/san_serif.png" alt="san_serif">
+					</div>
+					<h5>Serif</h5>
+					<div class="izquierda">
+						<p>Se considera una tipografía con elegancia y estilo además de ser el más
+							usado de cara a los formatos que van a ser impresos.
+							Esta tipografía nos ayuda a no perder el hilo del texto y marcar en cierta medida
+							la línea a seguir, pero no funciona en tamaños pequeños ya que se puede tener
+						problemas a la hora de leerse</p>
+						<img src="../Imagenes/serif.png" alt="serif">
+					</div>
+					<h5>Medida relativa</h5>
+					<p> Las unidades relativas de CSS son aquellas que tienen en cuenta el
+						contexto donde se encuentran. Son relativas a las dimensiones del contenedor donde
+						se han definido. Por ejemplo %, es una unidad relativa, puesto que 30% de ancho no
+						será lo mismo para un elemento situado dentro de un contenedor de 2000px de anchura
+					o sobre un contenedor de 1000px de anchura.</p>
+					<ul>
+						<li>%: porcentaje
+						</li>
+						<li>em: Altura de la fuente</li>
+						<li>rem: Root-em</li>
+						<li>vw: Viewport width
+						</li>
+						<li>vh: Viewport Height</li>
+					</ul>
+					<img src="../Imagenes/unidades-relativas-em.png" alt="unidades-relativas" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+					<h5>Medida absoluta</h5>
+					<p>Son aquellas que especifican una medida en términos absolutos, sin tener en cuenta el
+						contexto donde se están aplicando. Uno de los motivos por el cual las unidades
+						absolutas se usen poco es que no permiten adaptarse al tamaño de la pantalla que
+						utilice cada usuario.<br/>
+						Hoy día, existen grandes pantallas (por ejemplo, de 32 pulgadas de unos 480 x 730 mm)
+						pero también pequeñas pantallas (por ejemplo, smartphones con pantallas de 7
+						pulgadas de unos 90x170 mm de tamaño). Si queremos mostrar un contenido y lo
+						definimos en unidades absolutas, por ejemplo, con un ancho de 300 mm y un alto de
+						200 mm, cuando lo veamos en un monitor grande nos parecerá pequeño; por el contrario, cuando lo veamos en un dispositivo pequeño como una tablet nos aparecerá
+					cortado por ser excesivamente grande.</p>
+					<img src="../Imagenes/unidades-absolutas.png" alt="unidades-absolutas" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+					<p>Si en vez de unidades absolutas indicamos una
+						unidad relativa como 100%, el contenido se adaptará
+						al ancho disponible para cada dispositivo, lo cual
+						resulta ventajoso. En realidad, la gran variación de
+						tamaño de los dispositivos supone un problema que
+						no es nada fácil de solventar, ni siquiera utilizando unidades de medida relativas.
+					</p>
+					<ul class="listas">
+						<li>px: Píxeles</li>
+						<li>in: Pulgadas (1 in es igual a 96px)</li>
+						<li>pt: Puntos (1 pt es igual a 1/72 in)
+						</li>
+						<li>cm: Centímetros</li>
+						<li>pc: Picas</li>
+					</ul>
+					<img src="../Imagenes/medidas-pagina-web.png" alt="medidas" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+				</div>
+				<div class="text">
+					<h4>- Los iconos</h4>
+					<p>Un icono es un pictograma utilizado para representar archivos, carpetas, programas,
+						unidades de almacenamiento, etc. en un sistema operativo gráfico. En el uso moderno,
+						el icono puede representar cualquier cosa que los usuarios quieran: cualquier comando
+						o proceso, o cualquier otro indicador.
+					</p>
+					<p>Generalmente está situado en el rango entre 16 por 16
+						pixeles hasta 128 por 128 pixeles. Algunos sistemas
+						operativos ofrecen iconos soportados por 250 pixeles. Los
+						usuarios con problemas de visión (debido a condiciones
+						como la iluminación pobre, ojos cansados, impedimentos
+						médicos, y/o fondos brillantes) pueden necesitar el ajuste del
+					tamaño del icono.</p>
+					<img src="../Imagenes/iconos.jpg" alt="iconos" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+					<p>Los iconos pueden ser imágenes en un formato clásico (como PNG o JPEG) o archivos
+						binarios en formato propietario. En Windows, los iconos son archivos binarios .ico. En Mac, se trata de archivos de tipo .icns. En sistemas operativos basados en UNIX se
+						utilizan imágenes simples de tipo PNG, SVG o XPM.<br/>
+					Algunas de las páginas para descargar iconos:</p>
+					<ul class="listas">
+						<li><a href="https://www.freepik.com/popular" target="_blank">https://www.freepik.com/popular</a></li>
+						<li>	<a href="https://dribbble.com/search/free%20icons" target="_blank">https://dribbble.com/search/free%20icons</a></li>
+						<li><a href="https://www.iconfinder.com/" target="_blank">https://www.iconfinder.com/</a></li>
+					</ul>
+				</div>
+			</article>
+			<article class="articulo" id="maquetacion">
+				<h3>Maquetación Web</h3>
+				<div class="texto">
+					<h4>- Maquetación mediante tablas y mediante capas</h4>
+					<p>Maquetar una página llamamos a colocar los contenidos de la manera que deseamos.
+						Podría ser un sinónimo de diseñar, aunque el diseño implica realizar una creatividad o un
+						aspecto de la página y maquetar es cuando ya tienes el aspecto definido o diseñado y lo que
+						estás haciendo es colocar los elementos que forman parte del diseño en las posiciones que
+						deseas.<br/>
+						Para realizar el posicionamiento de los
+						elementos en el lugar deseado, se pueden
+						utilizar dos técnicas. Por tablas, que hace uso de
+						la etiqueta &lt;table&gt; para el posicionamiento y
+						por capas se utiliza la etiqueta &lt;div&gt; y se asigna
+						posicionamiento con hojas de estilo en cascada
+					(CSS).</p>
+					<img src="../Imagenes/maquetacion.png" alt="maquetacion" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+					<h5>Ventajas de los divs</h5>
+					<ul class="listas">
+						<li>Se requiere menos código con los divs que con las tablas lo cual nos aporta más
+						velocidad</li>
+						<li>Los divs respetan los estilos mucho mejor que las tablas</li>
+						<li>Los divs fueron específicamente creados para diseño, las tablas son para tabular
+						resultados y aún deberíamos seguir utilizándolas para ello</li>
+						<li>Los divs nos permiten separar el diseño de la lógica de la programación</li>
+					</ul>
+					<h5>Desventajas de los divs</h5>
+					<ul class="listas">
+						<li>Hay cosas que son muy complicadas de hacer con divs como por ejemplo que acomoden
+							su tamaño en función de otro div, aunque en tablas eso es automático con divs es una
+						pesadilla</li>
+						<li>Otro asunto para el que hay que romperse la cabeza con divs es el centrado vertical no
+						funciona exactamente como quisiéramos</li>
+					</ul>
+				</div>
+			</article>
+			<article class="articulo" id="guias_de_estilo">
+				<h3>Guías de estilo</h3>
+				<div class="texto">
+					<p>Una guía de estilo es una colección de elemento prediseñados gráficos y reglas que diseñadores
+						o desarrolladores web deben seguir para asegurarse que partes separadas del sitio web sean
+					consistentes y creen una experiencia cohesiva al final.</p>
+					<img src="../Imagenes/guia.jpg" alt="guia" style="margin: auto; display: block; margin-top: 50px; margin-bottom: 50px;">
+					<p>Es extremadamente importante cuando varios diseñadores están trabajando juntos en un sitio
+						web grande o aplicaciones web para asegurarse que no interpreten mucho y que no cambien o
+						ajusten los estilos basados en gustos personales. En el desarrollo, tener los elementos del sitio
+						web definidos hace más fácil la labor de los desarrolladores web al momento de utilizar estos
+						elementos. Además, es más fácil porque ellos
+						sabrán qué elementos tienen que codificar y
+						podrán ver exactamente lo que necesitan
+						desde el comienzo.
+					</p>
+					<p>Para hacer el trabajo de los desarrolladores
+						más fácil, es deber del diseñador incluir todas
+						las posibles interacciones tales como
+						desplazar, cliquear, visitar y otros estados
+						para botones, títulos, link, etc.
+						Pasos para crear una guía de estilo de diseño
+						web:
+					</p>
+					<ol class="listas" style="margin-left: 15%;">
+						<li>Estudia la marca</li>
+						<li>Define la tipografía</li>
+						<li>La paleta de colores</li>
+						<li>Voz</li>
+						<li>Iconografía</li>
+						<li>Las imágenes</li>
+						<li>Formas</li>
+						<li>Botones</li>
+						<li>El espaciado</li>
+						<li>¿Qué es lo que debes y no debes hacer?</li>
+					</ol>
+				</div>
+			</article>
+		</section>
+		<footer>
+			<div class="fila">
+				<div class="columna">
+					<h3>Contacto</h3>
+					<p>Calle 123 Manuel Troya</p>
+					<p>Gijon - Asturias - España</p>
+					<p><a href="#" class="email">jessuss@gmail.com</a><p>
+						<p>+34 248212341</p>
+					</div>
+					<div class="columna">
+						<h3>Información</h3>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Politica de Privacidad</a></li>
+							<li><a href="#">Contactanos</a></li>
+							<li><a href="#">Terminos y Condiciones</a></li>
+						</ul>
+					</div>
+					<div class="columna">
+						<h3>Newsletter</h3>
+						<form>
+							<img src="../Imagenes/correo.png" alt="correo">
+							<input type="email" name="email" placeholder="Introduce su email">
+							<button type="submit"><img src="../Imagenes/siguiente.png" alt="siguiente"></button>
+
+						</form>
+						<div class="social">
+							<img src="../Imagenes/instagram.png" alt="instagram">
+							<img src="../Imagenes/whatsapp.png" alt="WhatsApp">
+							<img src="../Imagenes/twitter.png" alt="Twitter">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+	</html>

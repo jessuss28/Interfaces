@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Css/estilos.css">
+	<style>
+#titulo:hover{
+	background: #37474F;
+	color: #fff;
+	padding: 30px;
+}
+#titulo{
+	color: #37474F;
+	background: #fff;
+	width: 50%;
+	padding: 35px 5px 35px 5px;
+	left: 35%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#titulo h2{
+	text-align: right;
+	font-size: 30px;
+	width: 75%;
+}
+#titulo h1{
+	font-size:70px; 
+}
+.codigo{
+			line-height: 0;
+			width: 100%;
+			height: 120vh;
+			overflow: hidden;
+			margin: auto;
+			z-index: 100;
+			position: relative;
+			margin-bottom: 150px;
+		}
+		.codigo div{
+			width: 100%;
+			height: 100%;
+			transition-duration: 1s;
+			background: url(../Imagenes/accesibilidad_web.png);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: 100;
+			bottom: 0;
+			position: absolute;
+		}
+		.codigo div:hover{
+			transform: scale(1.1);
+			transition: 1s all;
+			z-index: 10;
+		}
+
+
+
+
+</style>
+	<title>Diseño Interfaces Web</title>
+</head>
+<body>
+	<div id="arriba"></div>
+	<div id="main">
+	<div id="arrow">
+			<a href="#arriba"><img src="../Imagenes/up-arrow.png" alt="flecha"></a>
+		</div>
+	<header>
+		<nav>
+			<a href="../Index.html"><img src="../Imagenes/logo-fp.png" alt="logo"></a>
+			<ul class="menu">
+				<li><a href="Planificacion.html">Planificación</a>
+					<ul>
+						<li><a href="Planificacion.html#estructura">Estructura</a></li>
+						<li><a href="Planificacion.html#elementos_basicos">Elementos Basicos</a></li>
+						<li><a href="Planificacion.html#maquetacion">Maquetación</a></li>
+						<li><a href="Planificacion.html#guias_de_estilo">Guías de Estilo</a></li>
+					</ul>
+				</li>
+				<li><a href="Accesibilidad.html">Accesibilidad</a>
+				<ul>
+					<li><a href="#concepto">Concepto</a></li>
+					<li><a href="#consorcio">Consorcio</a></li>
+					<li><a href="#consejos">Consejos web accesible</a></li>
+					<li><a href="#evolucion">Evolución</a></li>
+				</ul>
+				</li>
+				<li><a href="Usabilidad.html">Usabilidad</a>
+					<ul>
+						<li><a href="Usabilidad.html#concepto">Concepto</a></li>
+						<li><a href="Usabilidad.html#directrices">Directrices y consejos</a></li>
+						<li><a href="Usabilidad.html#beneficios">Beneficios</a></li>
+						<li><a href="Usabilidad.html#seo">Seo - Posicionamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="Derechos_Licencias.html">Derechos/Licencias</a>
+					<ul>
+						<li><a href="Derechos_Licencias.html#copyright">Copyright</a></li>
+						<li><a href="Derechos_Licencias.html#software">Licencias de Software</a></li>
+						<li><a href="Derechos_Licencias.html#beneficios">Tipos de Licencias</a></li>
+						<li><a href="Derechos_Licencias.html#copyleft">Copyleft</a></li>
+					</ul>
+				</li>
+				<li><a href="Imagenes.html">Imágenes</a>
+					<ul>
+						<li><a href="Imagenes.html#Tipo">Tipo</a></li>
+						<li><a href="Imagenes.html#Formatos">Formatos</a></li>
+						<li><a href="Imagenes.html#software_imagenes">Software imagenes</a></li>
+						<li><a href="Imagenes.html#Inclusion">Inclusion</a></li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="fondo">
+			<div id="titulo">
+				<h1>Accesibilidad</h1><br><h2>web</h2>
+			</div>
+		</div>
+	</header>
+	<div class="codigo">
+			<div>
+			</div>
+			<!-- <img src="Imagenes/codigo.jpg"> -->
+	</div>
+	<section>
+			<article class="articulo" id="concepto">
+				<h3>Concepto de “Accesibilidad Web”</h3>
+				<img src="../Imagenes/accesi.jpg" alt="accesibilidad_web" style="width: 55%; display: block; margin: auto;">
+				<div class="text">
+					<h4>- Concepto y objetivos de la Accesibilidad Web</h4>
+					<p>La accesibilidad web tiene como objetivo lograr que las páginas web sean
+					utilizables por el máximo número de personas, independientemente de sus
+					conocimientos o capacidades personales e independientemente de las
+					características técnicas del equipo utilizado para acceder a la Web
+					</p>
+						<img src="../Imagenes/accesibility.png" alt="accesibilidad" style="display: block; margin: auto; margin-top: 20px; margin-bottom: 20px; width: 80%;" >
+						<p>La necesidad de que la Web sea universal y accesible por cualquier persona
+						está presente desde el principio de la Web, ya que era un requisito
+						contemplado en su diseño por su creador Tim Berners-Lee.<br/>La accesibilidad Web significa que
+						personas con algún tipo de
+						discapacidad van a poder hacer uso de
+						la Web. En concreto, al hablar de
+						accesibilidad Web se está haciendo
+						referencia a un diseño Web que va a
+						permitir que estas personas puedan
+						percibir, entender, navegar e interactuar con la Web, aportando a su vez
+						contenidos. La accesibilidad Web también beneficia a otras personas,
+						incluyendo personas de edad avanzada que han visto mermadas sus
+						habilidades a consecuencia de la edad.
+						</p>
+						<p>Para lograr la accesibilidad, se han desarrollado diferentes pautas o guías que
+						explican cómo se tienen que crear las páginas web para que sean accesibles.
+						</p>
+				</div>
+				<div class="text">
+					<h4>- Limitaciones de acceso a la web</h4>
+					<p>Deficiencias visuales: Entre las que se encuentran la ceguera, la visión reducida
+					y los problemas en visualización de color.</p>
+					<p>Deficiencias auditivas: Estas deficiencias pueden ser consideradas menos
+					limitadoras en el acceso y uso de
+					contenidos digitales, debido a
+					que el canal sonoro es mucho
+					menos utilizado en interfaces
+					web que el canal visual. Aún así,
+					no podemos olvidar limitaciones
+					y barreras derivadas de esta
+					discapacidad, como es el caso del
+					lenguaje.</p>
+					<img src="../Imagenes/limitaciones.png" alt="limitaciones" style="margin: 30px 0;">
+					<p>Deficiencias motrices: Son las relacionadas con la capacidad de movilidad del
+					usuario. Estos usuarios no suelen ser capaces de interactuar con el sistema a
+					través de dispositivos de entrada tradicionales, por lo que utilizan dispositivos
+					alternativos (Ejem: basados en voz).
+					Deficiencias cognitivas y de lenguaje: Son usuarios que presentan problemas
+					en el uso del lenguaje, la lectura, percepción, memoria, salud mental…</p>
+				</div>
+			</article>	
+			<article class="articulo" id="consorcio">
+				<h3>- El consorcio World Wide Web (W3C)</h3>
+				<div class="text">
+					<h4>- Qué es, qué estructura tiene y cuáles son sus objetivos</h4>
+					<div class="derecha">
+					<p>El W3C (World Wide Web Consortium) es un comité que se dedica a
+					implementar tecnologías uniformes en el uso y desarrollo de Internet. El
+					organismo fue fundado en el MIT en Cambridge, Massachusetts, EE.UU. en
+					1994 y tiene oficinas en cada región del mundo. En España existe una en el
+					Parque Tecnológico de Gijón.</p>
+					<img src="../Imagenes/w3c.jpg" alt="w3c">
+				</div>
+					<p style="margin-top: 20px;">El objetivo del W3C es uniformar las
+					especificaciones técnicas y establecer
+					directrices para el desarrollo de
+					tecnologías web, de forma que se
+					mantenga la idea básica de la World
+					Wide Web. Tecnologías como HTML,
+					XML, CSS, otros lenguajes de marcado
+					y servicios web son utilizados
+					diariamente por millones de usuarios.
+					<br/>Los estándares más conocidos son:
+					</p>
+					<ul class="listas">
+						<li>HTML por sus siglas en inglés “HyperText Markup Language”, define y presenta
+						la estructura de los documentos web.
+						</li>
+						<li>CSS, por sus siglas en inglés “Cascading Style Sheets”, el cual permite la
+						asignación de estilos para la correcta representación de los documentos.</li>
+						<li>XML, por sus siglas en inglés “eXtensible Markup Language”, cuya función es la
+						de base para un número extenso de tecnologías.</li>
+					</ul>
+				</div>
+			</article>
+			<article class="articulo" id="consejos">
+				<h3>- Consejos para crear una web accesible.</h3>
+				<div class="text">
+					<ol>
+						<li><h4>Asegúrate de que su página web sea compatible con el teclado.</h4>
+						<div class="derecha">
+						<p>Para que un sitio web sea accesible, debe funcionar sin el uso de un ratón. Esto
+						se debe a que muchas tecnologías asistidas dependen de la navegación solo
+						con el teclado. Por lo que debe ser
+						posible utilizar todas las funciones
+						principales de tu sitio a través de un
+						teclado y nada más, esto incluye
+						acceder a todas las páginas, enlaces,
+						contenido, etc</p>
+						<img src="../Imagenes/accesibilidad.jpg" alt="accesibilidad">
+						</div>
+						</li>
+						<li><h4>Agrega texto alternativo a las imágenes.</h4>
+						<p>Aquí, puedes introducir el texto alternativo para una imagen. Este texto actúa
+						como un reemplazo de la imagen si no se carga.
+						</p>
+						</li>
+						<li><h4>Elige tus colores con cuidado.</h4>
+						<div class="izquierda">
+						<p>Al crear un esquema de color
+						para un sitio web, asegúrate de
+						que los colores de primer plano y
+						fondo cumplan con el nivel de
+						contraste mínimo requerido. Este
+						es una relación de contraste de
+						4.5:1 para texto estándar y 3:1
+						para texto grande.
+						</p>
+						<img src="../Imagenes/rueda-de-colores.jpg" alt="rueda-de-colores">
+						</div>
+						</li>
+						<li><h4>Usa encabezados para estructurar tu contenido correctamente.</h4>
+						<p>Otra tarea clave para hacer que tu página web sea accesible es estructurar el
+						contenido mediante el uso de encabezados ( H1, H2, H3 ). Hacer esto hará que
+						tu contenido sea mucho más fácil de entender.<br/>
+						Solo se debe usar un H1 por página , generalmente como el título principal.<br/>
+						Los subtítulos comienzan con H2, que luego pueden anidarse más con H3,
+						seguido de H4. Siempre deben usarse en orden, por lo que debe evitar usar un
+						H4 directamente después de un H2 (y así sucesivamente).
+						</p>
+						<img src="../Imagenes/h1.png" alt="h1">
+						</li>
+						<li><h4>Diseña los formularios para que sean accesibles.</h4>
+						<p>Los formularios son un elemento común en la mayoría de las páginas web,
+						pero deben diseñarse con cuidado y organizarse de manera lógica. Las
+						instrucciones, claves para rellenarlo, campos de formulario obligatorios,
+						requisitos de formato de campo, etc. deben identificarse claramente.
+						</p>
+							<div class="derecha">
+						<img src="../Imagenes/formulario.png" alt="formulario">
+						<p>Lo más importante es
+						asegurarse de que cada campo está claramente etiquetado ya que un usuario
+						que no tiene discapacidad visual puede hacer coincidir fácilmente las etiquetas
+						con el campo u opción correspondiente, pero esto puede no ser tan obvio para
+						una persona que usa un lector de pantalla.</p>
+
+							</div>
+						</li>
+						<li><h4>No uses tablas para diseñar.</h4>
+							<div class="derecha">
+						<p>Es mejor evitar el uso de tablas para otra cosa que no sean datos tabulares. Por
+						ejemplo, nunca debe usar una tabla para diseños, listas o cualquier otra cosa.
+						Esto puede ser confuso para lectores de pantalla y dispositivos similares.
+						</p>
+						<img src="../Imagenes/tablas.png" alt="tabla">
+							</div>
+						</li>
+						<li><h4>Comprueba que al redimensionar el texto no se rompe la estructura de la
+						página web.</h4>
+						<p>Una buena práctica es evitar las unidades absolutas, como especificar el
+						tamaño del texto con píxeles. En su lugar, usa tamaños relativos, que permiten
+						que el texto se escale dependiendo de otro contenido y tamaño de pantalla.<br/>
+						Para asegurarse de que tu web cumpla con estos criterios, prueba a fondo los
+						tamaños de fuente aumentando el nivel de zoom en tu navegador y observa
+						que el contenido no se vuelve difícil de leer o navegar.
+						</p>
+						</li>
+						<li><h4>Archivos multimedia.</h4>
+							<div class="izquierda">
+								<img src="../Imagenes/multimedia.jpg" alt="multimedia">
+						<ul>
+							<li>Audio: Incluye una transcripción de texto.</li>
+							<li>Vídeo: Incluye la descripción del video</li>
+							<li>Vídeo con audio: Incluye subtítulos,
+							transcripción de texto y una
+							descripción de vídeo.</li>
+							<li>No reproduzcas automáticamente
+							vídeo. Permite que el usuario controle
+							el sonido.</li>
+							<li>Asegúrate de que tus usuarios pueden
+							controlar el reproductor con el
+							teclado.</li>
+						</ul>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</article>
+			<article class="articulo" id="evolucion">
+				<h3>- Evolución de la web</h3>
+				<div class="text">
+					<h4>La Web 1.0. Los comienzos.</h4>
+					<p>En 1991 se publica la primera página web creada por Tim Berners-Lee usando
+					un computador NeXT. Esta página, que podéis ver clicando aquí, hablaba sobre
+					el emergente y emocionante mundo del World Wide Web.
+					</p>
+					<img src="../Imagenes/web1_0.png" alt="web">
+					<p>La web 1.0 se denomina así para
+					definir todo lo creadoanteriormente al fenómeno de la Web 2.0, por lo que ambos
+					conceptos son sincrónicos.</p>
+					<p>Durante la última década del siglo XX navegamos por estas páginas estáticas en
+					HTML, donde abundaba el uso de marcos y botones gif y supeditadas al control
+					de un webmaster que, ocasionalmente, las actualizaba. El consumidor tenía un
+					papel pasivo donde sólo recibía información de las empresas. Los usuarios
+					solamente podían interactuar a través de e-mail, chat o en los hilos de
+					conversación de los primeros foros de internet.</p>
+				</div>
+				<div class="text">
+					<h4>La Web 2.0. Un paso adelante.</h4>
+					<p>La primera conferencia sobre la web 2.0 se celebró en Octubre de 2004,
+					aunque el término apareció por primera vez en 1999 en el artículo Fragmented
+					Future de Darcy DiNucci.
+					</p>
+					<img src="../Imagenes/web2_0.png" alt="web">
+					<p>Respecto al diseño, la web 2.0 se
+					basa en los estándares web, para
+					hacer de ella una página usable,
+					accesible para todos y eficiente. </p>
+										<p>La web 2.0 es puramente social. Se
+					basa en usuarios activos. El auge de los blogs, redes sociales, wikis, tags o
+					etiquetas, webs creadas por usuarios… etc., hace que las empresas cambien su
+					visión de mercado y estrategias de marketing completamente y las enfoquen a
+					la interacción con sus consumidores, que pasan a ser clientes 2.0 o
+					adprosumer. El cliente reclama transparencia, información asesoramiento, una
+					rápida atención al cliente, trato personal, low cost… Y ese mismo cliente hace
+					valoraciones online de los productos, se queja o felicita, promociona o
+					boicotea… Ahora es el que tiene el poder.</p>
+				</div>
+					<div class="text">
+					<h4>La Web 3.0 (la Web semántica). Nuevos retos</h4>
+					<p>La expresión web 3.0 apareció por primera vez en un artículo sobre Jeffrey
+					Zeldman, creador del Web Standards Project.
+					</p>
+					<img src="../Imagenes/web3_0.png" alt="web">
+					<p>El avance tecnológico hacia la
+					inteligencia artificial y de la web
+					semántica contribuyen a la aparición
+					de la web 3.0 o data web. Esta
+					tendencia de dirige al uso de
+					programas inteligentes que utilizan
+					datos semánticos para crear un
+					lenguaje que se puedan entender,
+					compartir e integrar fácilmente. Es primordial un diseño responsive adaptable
+					a cualquier dispositivo.</p>
+				</div>
+			</article>
+		</section>
+	<footer>
+		<div class="fila">
+			<div class="columna">
+			<h3>Contacto</h3>
+			<p>Calle 123 Manuel Troya</p>
+			<p>Gijon - Asturias - España</p>
+			<p><a href="#" class="email">jessuss@gmail.com</a><p>
+			<p>+34 248212341</p>
+		</div>
+<div class="columna">
+			<h3>Información</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Politica de Privacidad</a></li>
+				<li><a href="#">Contactanos</a></li>
+				<li><a href="#">Terminos y Condiciones</a></li>
+			</ul>
+		</div>
+		<div class="columna">
+			<h3>Newsletter</h3>
+			<form>
+				<img src="../Imagenes/correo.png" alt="correo">
+				<input type="email" name="email" placeholder="Introduce su email">
+				<button type="submit"><img src="../Imagenes/siguiente.png" alt="siguiente"></button>
+
+			</form>
+			<div class="social">
+				<img src="../Imagenes/instagram.png" alt="instagram">
+				<img src="../Imagenes/whatsapp.png" alt="whatsapp">
+				<img src="../Imagenes/twitter.png" alt="twitter">
+			</div>
+		</div>
+		</div>
+	</footer>
+		</div>
+</body>
+</html>

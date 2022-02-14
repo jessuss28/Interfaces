@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Css/estilos.css">
+	<style>
+		#titulo:hover{
+	background: #37474F;
+	color: #fff;
+	padding: 30px;
+}
+#titulo{
+	color: #37474F;
+	background: #fff;
+	width: 50%;
+	padding: 35px 5px 35px 5px;
+	left: 35%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+#titulo h2{
+	text-align: right;
+	font-size: 30px;
+	width: 75%;
+}
+#titulo h1{
+	font-size:70px; 
+}
+.codigo{
+			line-height: 0;
+			width: 100%;
+			height: 120vh;
+			overflow: hidden;
+			margin: auto;
+			z-index: 100;
+			position: relative;
+			margin-bottom: 150px;
+		}
+		.codigo div{
+			width: 100%;
+			height: 100%;
+			transition-duration: 1s;
+			background: url(../Imagenes/bancos-imagenes-gratis.png);
+			background-size: cover;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			z-index: 100;
+			bottom: 0;
+			position: absolute;
+		}
+		.codigo div:hover{
+			transform: scale(1.1);
+			transition: 1s all;
+			z-index: 10;
+		}
+</style>
+	<title>Diseño Interfaces Web</title>
+</head>
+<body>
+	<div id="arriba"></div>
+	<div id="main">
+	<div id="arrow">
+			<a href="#arriba"><img src="../Imagenes/up-arrow.png" alt="flecha"></a>
+		</div>
+	<header>
+		<nav>
+				<a href="../Index.html"><img src="../Imagenes/logo-fp.png" alt="logo-fp"></a>
+				<ul class="menu">
+					<li><a href="Planificacion.html">Planificación</a>
+						<ul>
+							<li><a href="Planificacion.html#estructura">Estructura</a></li>
+							<li><a href="Planificacion.html#elementos_basicos">Elementos Basicos</a></li>
+							<li><a href="Planificacion.html#maquetacion">Maquetación</a></li>
+							<li><a href="Planificacion.html#guias_de_estilo">Guías de Estilo</a></li>
+						</ul>
+					</li>
+					<li><a href="Accesibilidad.html">Accesibilidad</a>
+				<ul>
+					<li><a href="Accesibilidad.html#concepto">Concepto</a></li>
+					<li><a href="Accesibilidad.html#consorcio">Consorcio</a></li>
+					<li><a href="Accesibilidad.html#consejos">Consejos web accesible</a></li>
+					<li><a href="Accesibilidad.html#evolucion">Evolución</a></li>
+				</ul>
+				</li>
+					<li><a href="Usabilidad.html">Usabilidad</a>
+					<ul>
+						<li><a href="Usabilidad.html#concepto">Concepto</a></li>
+						<li><a href="Usabilidad.html#directrices">Directrices y consejos</a></li>
+						<li><a href="Usabilidad.html#beneficios">Beneficios</a></li>
+						<li><a href="Usabilidad.html#seo">Seo - Posicionamiento</a></li>
+					</ul>
+				</li>
+				<li><a href="Derechos_Licencias.html">Derechos/Licencias</a>
+					<ul>
+						<li><a href="Derechos_Licencias.html#copyright">Copyright</a></li>
+						<li><a href="Derechos_Licencias.html#software">Licencias de Software</a></li>
+						<li><a href="Derechos_Licencias.html#beneficios">Tipos de Licencias</a></li>
+						<li><a href="Derechos_Licencias.html#copyleft">Copyleft</a></li>
+					</ul>
+				</li>
+					<li><a href="Imagenes.html">Imágenes</a>
+					<ul>
+						<li><a href="#Tipo">Tipo</a></li>
+						<li><a href="#Formatos">Formatos</a></li>
+						<li><a href="#software_imagenes">Software Imagenes</a></li>
+						<li><a href="#Inclusion">Inclusion</a></li>
+					</ul>
+					</li>
+				</ul>
+			</nav>
+		<div id="fondo">
+			<div id="titulo">
+				<h1>Imágenes</h1><br><h2>para la web</h2>
+			</div>
+		</div>
+	</header>
+	<div class="codigo">
+				<div>
+				</div>
+				<!-- <img src="Imagenes/codigo.jpg"> -->
+		</div>
+	<section>
+			<article class="articulo" id="Tipo">
+				<h3> Tipos de imágenes. </h3>
+				<div class="text">
+					<h4>- Vectoriales y mapa de bits</h4>
+					<div class="derecha">
+						<img src="../Imagenes/mapa.jpeg" alt="mapa">
+						<p>Las imágenes vectoriales son gráficos
+						formados a base de curvas y líneas a
+						través de elementos geométricos
+						definidos como vectores. La gran
+						ventaja de las imágenes vectoriales es
+						que no sufren pérdida de resolución
+						al producirse una ampliación de los
+						mismos. Se utiliza mucho para
+						trabajos de rotulación, rótulos,
+						iconos, dibujos, logotipos de empresa
+						etc. Esta clase de imagen tiene poco
+						peso como archivo informático.</p>
+					</div>
+				</div>
+				<div class="text">
+					<h4>- Mapa de bits</h4>
+					<p>Los archivos de las imágenes se guardan normalmente en forma de mapa de bits o
+					mosaico de píxeles. Cada píxel guarda la información de color de la parte de imagen que
+					ocupa.
+					</p>
+					<p>Este tipo de imágenes son las que crean los escáneres y las cámaras digitales. Esta clase
+					de archivos ocupan mucha más memoria que las imágenes vectoriales.</p>
+					<div class="derecha">
+					<p>El principal inconveniente que
+					presentan esta clase de archivos
+					es el de la ampliación, cuando un
+					archivo se amplia mucho, se
+					distorsiona la imagen
+					mostrándose el mosaico "los
+					píxeles" y una degradación en los
+					colores llegando al efecto
+					pixelación (definido en el
+					apartado de imagen digital),
+					debido a la deformación de la fotografía.</p>
+					<img src="../Imagenes/mapa-de-bits.png" alt="mapa-de-bits">
+					</div>
+				</div>
+			</article>	
+			<article class="articulo" id="Formatos">
+				<h3>Formatos de imágenes </h3>
+				<div class="text">
+					<h4>- Relación calidad y su “peso”</h4>
+					<p>Un concepto y expresión que usamos al hablar de imágenes es el de tamaño. Este
+					término puede ocasionar confusión ya que solemos emplearlo para cosas diferentes:
+					normalmente decimos que una imagen tiene un tamaño de 13 x 18 cm o 1024 x 768
+					píxeles, pero también decimos que una imagen tiene un tamaño de 3 Mbytes. Este uso
+					impreciso de la palabra no suele causar mayores problemas, pero para los objetivos del
+					curso sí que es importante matizar, ya que son
+					dos características diferentes de una imagen.
+					</p>
+					<div class="derecha">
+						<p>De esta forma, en este tema, cuando hablemos
+						del tamaño nos referiremos sólo a las
+						dimensiones de la imagen: 13 x 18 cm, 1024 x
+						768 píxeles; y cuando se hable del espacio que
+						ocupa la imagen en el dispositivo de
+						almacenamiento –disco, memoria…- (3 Mbytes
+						o 149 Kbytes) lo definiremos como peso.</p>
+						<img src="../Imagenes/peso.jpg" alt="peso">
+					</div>
+					<p>De esta manera, podemos decir que una imagen es:</p>
+					<ul class="listas">
+						<li>Grande cuando tiene un tamaño igual o mayor a 1024x768 píxeles</li>
+						<li>Mediana cuando el tamaño va de 320x240 a 1024x768 píxeles</li>
+						<li>Pequeña cuando el tamaño es menor a 320x240 píxeles
+						</li>
+						<li>Muy pequeña cuando es menor a 100x100 píxeles</li>
+					</ul>
+					<p>O que es:</p>
+					<ul class="listas">
+						<li>Pesada si tiene 1 MB o más</li>
+						<li>De peso mediano si va de 300KB a 1 MB</li>
+						<li>Ligera si su peso es menor de 300KB</li>
+						<li>Muy ligera si el peso es inferior a 100KB</li>
+					</ul>
+				</div>
+				<div class="text">
+					<h4>- Formatos web: “jpg”, “gif”, “png”</h4>
+					<h5>JPG</h5>
+						<p>Es un tipo de archivo que fue desarrollado por el Joint Photographic Experts Group
+						(JPEG) para que fuese el estándar para las imágenes hechas por fotógrafos.</p>
+						<img src="../Imagenes/jpg.png" alt="jpg">
+					<h6>Ventajas y utilidades</h6>
+					<ul class="listas">
+						<li>Formato comprimido</li>
+						<li>Puede ser comprimido hasta 100 veces.</li>
+						<li>Mantiene una buena calidad tras la compresión.</li>
+						<li>Posee una amplia gama de colores.</li>
+						<li>Ideal para mostrar fotografías en la web dado que no suele ocupar mucho espacio</li>
+					</ul>
+					<h6>Desventajas</h6>
+					<ul class="listas">
+						<li>A pesar que mantiene la calidad, cuenta con pérdidas</li>
+						<li>No soporta animaciones ni fondos transparentes.</li>
+						<li>No es un formato multi-página.</li>
+						<li>Genera pixelación aún configurándola con la mayor calidad</li>
+						<li>No es adecuado para ilustraciones, dibujos, ni textos.</li>
+					</ul>
+					<h5>PNG</h5>
+					<p>Formato desarrollado en buena parte para solventar las deficiencias del formato
+					GIF. Permite almacenar imágenes con una mayor profundidad de contraste.</p>
+					<img src="../Imagenes/png.jpg" alt="png" style="width: 10%; margin: 10px 0 10px 120px;">
+					<h6>Ventajas y utilidades</h6>
+					<ul class="listas">
+						<li>Formato comprimido</li>
+						<li>Sin pérdidas.</li>
+						<li>Soporta millones de colores.</li>
+						<li>Soporta fondos transparentes y semitransparentes.</li>
+						<li>Ideal para el desarrollo de logotipos, botones y otro tipo de imágenes que
+						necesiten conservar una buena resolución.</li>
+					</ul>
+					<h6>Desventajas</h6>
+					<ul class="listas">
+						<li>No soporta animaciones.</li>
+						<li>No es un formato multi-página.</li>
+						<li>No es un formato multi-página.</li>
+						<li>Imágenes con muchos elementos y colores pueden pesar mucho más que su
+						equivalente en jpg.
+						</li>
+						<li>No admite modo CMYK.</li>
+						<li>Incompatibilidad con navegadores antiguos.</li>
+					</ul>
+					<h5>GIF</h5>
+					<p>Se utilizan, normalmente, para crear animaciones o imágenes en movimiento</p>
+					<img src="../Imagenes/gif.png" alt="gif" style="width: 10%; margin: 10px 0 10px 120px;">
+					<h6>Ventajas y utilidades</h6>
+					<ul class="listas">
+						<li>Sin pérdidas</li>
+						<li>Tamaño reducido.</li>
+						<li>Soporta animaciones y fondos transparentes.</li>
+						<li>Ayuda a construir una imagen moderna en los negocios.</li>
+						<li>Muy usado para imágenes pequeñas.</li>
+					</ul>
+					<h6>Desventajas</h6>
+					<ul class="listas">
+						<li>Baja calidad respecto a otros formatos.</li>
+						<li>Limitada profundidad de color (8 bits).</li>
+						<li>No es un formato multi-página.</li>
+					</ul>
+				</div>
+			</article>
+			<article class="articulo" id="software_imagenes">
+				<h3>Software para procesar imágenes</h3>
+				<div class="text">
+					<h4>- Photoshop</h4>
+					<p>Es un editor de fotografías desarrollado por Adobe Systems Incorporated. Usado
+					principalmente para el retoque de fotografías y gráficos, su nombre en español significa
+					"taller de fotos". Es conocido mundialmente.2 Fue creado en 1986 por los hermanos
+					Thomas Knoll y John Knoll, desde entonces se ha convertido en una marca de uso
+					común, lo que lleva a su uso como un verbo, aunque Adobe desaconseja su uso.
+					</p>
+					<div class="derecha">
+						<p>Photoshop puede
+						editar y componer
+						imágenes
+						rasterizadas y
+						soporta varios
+						modelos de
+						colores: RGB,
+						CMYK, CIELAB,
+						colores sólidos y semitonos. Photoshop usa sus propios formatos de archivo PSD y PSB
+						para soportar estas características. Desde junio de 2013, con la presentación de Creative
+						Cloud, el esquema de licencia de Photoshop se cambió al modelo de software como
+						servicio. Adobe planea incorporar más características a Photoshop para iPad.4
+						</p>
+						<img src="../Imagenes/Photoshop.jpg" alt="photoshop">
+					</div>
+					<h4>- Gimp</h4>
+					<p>GIMP (siglas en inglés de GNU Image Manipulation Program) es un programa de
+					edición de imágenes digitales en forma de mapa de bits, tanto dibujos como
+					fotografías. Es un programa libre y gratuito. Forma parte del proyecto GNU y está
+					disponible bajo la Licencia pública general de GNU y GNU Lesser General Public
+					License</p>
+					<div class="izquierda">
+						<p>Es el programa de manipulación de gráficos disponible en más sistemas operativos
+						(Unix, GNU/Linux, FreeBSD, Solaris, Microsoft
+						Windows y macOS, entre otros).
+						GIMP tiene herramientas que se utilizan para el
+						retoque y edición de imágenes, dibujo de formas
+						libres, cambiar el tamaño, recortar, hacer
+						fotomontajes, convertir a diferentes formatos de
+						imagen, y otras tareas más especializadas. Se
+						pueden también crear imágenes animadas en
+						formato GIF e imágenes animadas en formato
+						MPEG usando un plugin de animación.</p>
+						<img src="../Imagenes/gimp.png" alt="gimp">
+					</div>
+					<h4>- Pixlr</h4>
+					<p>Pixlr es un conjunto de herramientas y utilidades de edición de imágenes basado en la
+					nube, que incluye varios editores de fotos y un servicio para compartirlas. La suite está
+					pensada para los no profesionales, aunque las aplicaciones van desde la edición
+					fotográfica sencilla a la avanzada.</p>
+					<div class="izquierda">
+						<p>La plataforma se puede utilizar en el
+						escritorio y también en smartphones y
+						tablet a través de la aplicación móvil.2
+						Pixlr es compatible con varios formatos
+						de imagen como JPEG, PNG, WEBP, GIF,
+						PSD (imagen de photoshop) y PXZ
+						(formato de documento nativo de
+						Pixlr).3En 2013, Time incluyó a Pixlr en la
+						lista de los 50 mejores sitios web del año.</p>
+						<img src="../Imagenes/Pixlr.png" alt="pixlr">
+					</div>
+				</div>
+			</article>
+			<article class="articulo" id="Inclusion">
+				<h3>Inclusión de imágenes en la web. Etiqueta &lt;img&gt;</h3>
+				<div class="text">
+					<div class="derecha">
+						<p>Las imágenes de contenido son las que proporcionan información y complementan la
+						información textual. Las imágenes de adorno son las que se utilizan para hacer bordes
+						redondeados, para mostrar pequeños iconos en
+						las listas de elementos, para mostrar fondos de
+						página, etc. Las imágenes de contenido se incluyen
+						directamente en el código HTML mediante la
+						etiqueta &lt;img&gt; y las imágenes de adorno no se
+						deberían incluir en el código HTML, sino que
+						deberían emplearse hojas de estilos CSS para
+						mostrarlas.</p>
+						<img src="../Imagenes/img-html.jpg" alt="img">
+					</div>
+					<div class="derecha">
+						<p>Los dos atributos requeridos son src y alt. El atributo src es similar al atributo href de los
+						enlaces, ya que establece la URL de la imagen que se va a mostrar en la página. Las URL
+						indicadas pueden ser absolutas o relativas. El atributo alt permite describir el contenido
+						de la imagen mediante un texto breve.
+						Las descripciones deben tener una
+						longitud inferior a 1024 caracteres y
+						son útiles para las personas y
+						dispositivos discapacitados que no
+						pueden acceder a las imágenes.</p>
+						<img src="../Imagenes/insertar-imagenes-html.jpg" alt="insertar">
+					</div>
+					<p>Ejemplo sencillo para incluir una imagen:</p>
+					<p>&lt;img src="logotipo.gif" alt="Logotipo de Mi Sitio" /&gt;</p>
+					<p>HTML no impone ninguna restricción sobre el formato gráfico que se puede utilizar en
+					las imágenes, por lo que en principio la etiqueta &lt;img/&gt; puede incluir cualquier formato
+					gráfico existente. Sin embargo, si la imagen utiliza un formato poco habitual, todos o
+					algunos navegadores no serán capaces de mostrar esa imagen.</p>
+					<div class="izquierda">
+					<p>La recomendación es utilizar uno de los tres
+					siguientes formatos gráficos que entienden todos
+					los navegadores modernos: GIF, JPG y PNG. El
+					formato PNG presenta el inconveniente de que los
+					navegadores obsoletos como Internet Explorer 6 no
+					muestran correctamente las imágenes con
+					transparencias de 24 bits.
+					</p>
+					<img src="../Imagenes/formatos.jpg" alt="formatos-imagen">
+					</div>
+					<p>El atributo longdesc no se utiliza de forma habitual, pero permite indicar la URL en la
+					que se puede encontrar más información sobre la imagen. Como el atributo alt sólo
+					permite incluir descripciones de hasta 1024 caracteres, el atributo longdesc se emplea
+					con las imágenes complejas que necesitan mucha información para ser descritas:</p>
+					<div class="derecha">
+					<p>Los atributos width y height se utilizan para indicar la anchura y altura con la que se
+					muestran las imágenes, por lo que son los
+					más contradictorios. Como ya se ha
+					comentado, HTML estructura de forma
+					correcta los contenidos de la página y CSS
+					define el aspecto gráfico con el que se
+					muestran los contenidos. En principio, la
+					anchura y la altura con la que se muestra
+					una imagen es parte de su aspecto gráfico,
+					por lo que debería ser propio de CSS y no
+					de XHTML.</p>
+					<img src="../Imagenes/logo-css.png" alt="css">
+				</div>
+				<p>Sin embargo, en la práctica no es viable establecer la anchura y altura de todas las
+				imágenes de contenidos mediante CSS. Si el sitio web dispone de muchas imágenes, la
+				sobrecarga de estilos diferentes que debería definir CSS sería contraproducente. Por
+				este motivo, los atributos width y height son la excepción a la norma de que el código
+				HTML no haga referencia al aspecto de los contenidos.</p>
+				</div>
+			</article>
+		</section>
+	<footer>
+		<div class="fila">
+			<div class="columna">
+			<h3>Contacto</h3>
+			<p>Calle 123 Manuel Troya</p>
+			<p>Gijon - Asturias - España</p>
+			<p><a href="#" class="email">jessuss@gmail.com</a><p>
+			<p>+34 248212341</p>
+		</div>
+<div class="columna">
+			<h3>Información</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Politica de Privacidad</a></li>
+				<li><a href="#">Contactanos</a></li>
+				<li><a href="#">Terminos y Condiciones</a></li>
+			</ul>
+		</div>
+		<div class="columna">
+			<h3>Newsletter</h3>
+			<form>
+				<img src="../Imagenes/correo.png" alt="correo">
+				<input type="email" name="email" placeholder="Introduce su email">
+				<button type="submit"><img src="../Imagenes/siguiente.png" alt="siguiente"></button>
+
+			</form>
+			<div class="social">
+				<img src="../Imagenes/instagram.png" alt="instagram">
+				<img src="../Imagenes/whatsapp.png" alt="whatsapp">
+				<img src="../Imagenes/twitter.png" alt="twitter">
+			</div>
+		</div>
+		</div>
+	</footer>
+		</div>
+</body>
+</html>
